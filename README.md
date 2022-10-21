@@ -1,5 +1,7 @@
 # Polygon x EasyA Hackathon Project
 
+[Polygon Docs](https://wiki.polygon.technology/docs/develop/getting-started) | [React Docs](https://reactjs.org/docs/hello-world.html) | [Truffle Docs](https://trufflesuite.com/docs/truffle/) | [Polygon Guide](https://polygontechnology.notion.site/Polygon-Developer-Library-BUIDL-IT-Hackathon-36e70eac8c1f4f11a9d2fad9da8e0749)
+
 **Network**: `Matic Mumbai Test Network` (Polygon)
 
 ## Prerequisites
