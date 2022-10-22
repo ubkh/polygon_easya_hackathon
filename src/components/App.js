@@ -39,6 +39,8 @@ class App extends Component {
   render() {
     return (
       <>
+      <div class="background">
+
       <div>
         <h1>Header</h1>
       </div>
@@ -48,6 +50,7 @@ class App extends Component {
           <Route path="/donate"  component={Donate}/>
           <Route path="/vote"  component={Vote}/>
       </BrowserRouter>
+      </div>
       </>
     );
   }
