@@ -1,6 +1,13 @@
 import React, { Component } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Web3 from "web3";
 import "./App.css";
+
+import ContainerOutsideExample from "./Navbar/navbar.js";
+import ParticlesBackground  from "./background/ParticlesBackground";
+
+import Header from "./Header/header.js";
+
 
 class App extends Component {
   async componentWillMount() {
@@ -33,11 +40,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
+      <>
+        <ContainerOutsideExample />
+        <Header/>
+      </>
     );
   }
 }
+
 
 export default App;
