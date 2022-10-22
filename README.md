@@ -17,10 +17,13 @@
 5. Create a `.env` file in the root directory and insert `MNEMONIC = <YOUR-METAMASK-SECRET-PHRASE>`.
 
 ## Deployment
-1. Open ganache personal blockchain: `ganache`
-2. Deploy smart contracts to blockchain (choose ONE):
-  * Local Ganache net: `truffle migrate`
-  * Polygon testnet: `truffle migrate --network polygon`
-3. Start react app: `npm start`
+* Using local ganache net:
+  1. Open ganache personal blockchain: `ganache`
+  2. Deploy smart contracts to blockchain: `truffle migrate`
+  3. Start react app: `npm start`
+
+* Using polygon testnet:
+  1. Deploy smart contracts to blockchain: `truffle migrate --network polygon`
+  2. Start react app: `npm start`
 
 **Note: In order to use the Polygon testnet you must transfer `MATIC` to your MetaMask wallet address. Use [Polygon Faucet](https://faucet.polygon.technology/) for this.**
