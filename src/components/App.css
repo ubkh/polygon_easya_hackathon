@@ -13,9 +13,68 @@ html {
 }
 
 body {
-  background-color: #f6f8fd;
+  background-color: #fff;
 }
 
 .main {
   margin-bottom: -200px;
+}
+
+#standard-basic {
+  display: inline-block;
+}
+
+.btn-light {
+  border-color: #fff;
+  color: #8247E5;
+  transition: all 0.75s ease !important;
+  font-size: 16px;
+}
+
+.btn-outline-primary:hover {
+  border-color: #fff;
+  background-color: #8247E5;
+  transition: all 0.75s ease !important;
+  font-size: 18px;
+}
+
+h1, p {
+  color: #8247E5;
+}
+
+form {
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #8247E5;
+  width: fit-content;
+  padding: 3em 4em;
+  margin: 5em 5em;
+}
+
+form .text {
+  color: #fff;
+  font-size: 20px
+}
+
+form label {
+  color: #fff;
+  font-size: 16px;
+  transform: translateX(0.5em);
+}
+
+form .checkLabel {
+  transform: translateX(3em);
+}
+
+.donationAmount, .donationAmount:focus {
+  border-width: 0 0 2px 0;
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  font-size: 20px;
+  outline: none;
+}
+
+input[type="radio"]:checked{
+  background-color: #8247E5;
 }
