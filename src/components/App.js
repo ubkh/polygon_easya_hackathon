@@ -5,7 +5,9 @@ import  {BrowserRouter, Route, Link} from 'react-router-dom';
 import "./App.css";
 import Home from "./Home.js";
 import Donate from "./Donate.js";
+import Donated from "./Donated.js";
 import Vote from "./Vote.js";
+import Voted from "./Voted.js";
 
 class App extends Component {
   async componentWillMount() {
@@ -48,7 +50,9 @@ class App extends Component {
       <BrowserRouter>
           <Route exact path="/"  component={Home}/>
           <Route path="/donate"  component={Donate}/>
+          <Route path="/donated"  component={Donated}/>
           <Route path="/vote"  component={Vote}/>
+          <Route path="/voted"  component={Voted}/>
       </BrowserRouter>
       </div>
       </>
