@@ -14,7 +14,9 @@
 2. `cd polygon_easya_hackathon`
 3. Install dependancies: `npm install`. May need to follow up with `npm audit fix`.
 4. Install ganache: `npm install ganache --global`
-5. Create a `.env` file in the root directory and insert `MNEMONIC = <YOUR-METAMASK-SECRET-PHRASE>`.
+5. Install truffle: `npm install -g truffle`
+6. Create a `.env` file in the root directory and insert `MNEMONIC = <YOUR-METAMASK-SECRET-PHRASE>`.
+7. [Add Testnet to MetaMask](https://mumbai.polygonscan.com/) - the link is at the bottom of this page.
 
 ## Deployment
 * Using local ganache net:
