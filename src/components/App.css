@@ -47,8 +47,23 @@ form {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-color: #8247E5;
   width: fit-content;
-  padding: 4em 4em;
+  padding: 3em 4em;
   margin: 5em 5em;
+}
+
+form .text {
+  color: #fff;
+  font-size: 20px
+}
+
+form label {
+  color: #fff;
+  font-size: 16px;
+  transform: translateX(0.5em);
+}
+
+form .checkLabel {
+  transform: translateX(3em);
 }
 
 .donationAmount, .donationAmount:focus {
@@ -58,4 +73,8 @@ form {
   border-color: #fff;
   font-size: 20px;
   outline: none;
+}
+
+input[type="radio"]:checked{
+  background-color: #8247E5;
 }
