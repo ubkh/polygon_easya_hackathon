@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import Web3 from "web3";
 import  {BrowserRouter, Route, Link} from 'react-router-dom';
 
+import NavigatorPages from "./Navbar/navbarPage.js";
+
 
 function Donated() {
     return (
         <>
         <div align="center">
+        <NavigatorPages/>
             <h1>Your donation has been sent successfully</h1>
             <p>Thank you for donating, if this is your first donation, please take a chance to vote on where we should allocate these funds</p> 
 

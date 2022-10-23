@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+
+
 .navbar {
   padding-top: 80px;
  justify-content: space-between;
- display: flex;
  gap :4rem;
-
+  transform: translateX(-3em);
 }
 
 .nav-link {
@@ -42,16 +43,19 @@
 }
 
 .hero {
-  height: 100vh;
+  height: fit-content;
   background: linear-gradient(to bottom left, #88d2f0, #8176b5);
   background-size: cover;
   background-position: center;
+  margin-bottom: 5em;
+  padding-bottom: 0em;
+  margin-right: -13em;
 }
 
 .hero-heading {
   color: #fff;
   position: absolute;
-  top: 220px;
+  top: 5em;
   left: 0;
   right: 0;
   margin: auto;
@@ -61,7 +65,7 @@
   font-family: "Roboto Slab",;
   padding: 0 8px;
   max-width: 300px;
-  width: 100%;
+  width: 100;
   z-index: 5;
 }
 
@@ -104,26 +108,11 @@
     padding: 20px;
     z-index: 55;
   }
-
-  nav {
-    ul li > a {
-      color: #807cb9 !important;
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
 }
 
 /* Mobile -btn */
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-.navbar-dark .navbar-toggler {
-  border-color: transparent !important;
-  &:focus {
-    border-color: transparent !important;
-  }
 }
 
 /* ========================

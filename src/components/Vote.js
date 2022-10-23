@@ -3,12 +3,14 @@ import Web3 from "web3";
 import  {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import "./App.css";
+import NavigatorPages from "./Navbar/navbarPage.js";
 
 class Vote extends Component {
     render() {
         return (
             <>  
                 <div align="center">
+                <NavigatorPages/>
                 <h1>Vote</h1>
 
                 <form id="form">

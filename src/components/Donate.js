@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Web3 from "web3";
 import  {BrowserRouter, Route, Link} from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from "@material-ui/core/styles";
+
 import polygonlogo from './images/polygonlogo.png';
 import "./App.css";
+import NavigatorPages from "./Navbar/navbarPage.js";
 
 function isNumeric(str) {
     if (typeof str != "string") return false // we only process strings!  
@@ -17,6 +18,7 @@ class Donate extends Component {
         return ( 
             <>
             <div align="center">
+            <NavigatorPages/>
                 <h1>Donate</h1>
                
                 <form>

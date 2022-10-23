@@ -7,7 +7,7 @@ class Chart extends Component {
     render() {
         return ( 
             <>
-            <div align="center">
+            <div align="center" style={{padding:"15em 0 15em 0"}}>
                 <DonutChart
                 data={[
                     {label: '1', value: 25,},

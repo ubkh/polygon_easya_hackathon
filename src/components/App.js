@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Web3 from "web3";
-import  {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import "./App.css";
 import Home from "./Home.js";
@@ -10,11 +9,6 @@ import Donate from "./Donate.js";
 import Donated from "./Donated.js";
 import Vote from "./Vote.js";
 import Voted from "./Voted.js";
-
-import ContainerOutsideExample from "./Navbar/navbar.js";
-import ParticlesBackground  from "./background/ParticlesBackground";
-
-import Header from "./Header/header.js";
 
 
 class App extends Component {
@@ -50,10 +44,6 @@ class App extends Component {
     return (
       <>
       <div class="background">
-
-      <div>
-        <h1>Header</h1>
-      </div>
 
       <BrowserRouter>
           <Route exact path="/"  component={Home}/>
