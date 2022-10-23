@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #d790d8;
+  /* background: linear-gradient(to top left, #7b096a, #cb7fd4); */
+}
+
+.show-modal .text {
+  margin-top: -1rem;
+}
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8rem 0rem;
+  margin: 2rem 2rem;
+  border: none;
+  background-color: rgb(198, 103, 192);
+  color: rgb(7, 7, 7);
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 30rem;
+  height: 4rem;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.show-modal:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.close-modal:hover {
+  color: red;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: rgb(249, 242, 242);
+
+  background-color: rgb(133, 23, 113);
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: space-around;
+}
+
+.item1btn {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item2btn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item3btn {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item4btn {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item5btn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item6btn {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}

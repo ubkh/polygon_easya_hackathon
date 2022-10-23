@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal window</title>
+  </head>
+  <body>
+    <div class="grid">
+      <btn class="item1btn">
+        <button class="show-modal"><div class="text">Hunger</div></button>
+      </btn>
+
+      <btn class="item2btn">
+        <button onclick="changeText1()" class="show-modal">
+          <div class="text">Health</div>
+        </button>
+      </btn>
+      <script>
+        function changeText1() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Health Charities</h1> <p> <li>Mind</li> <li>Age Scotland</li> <li>Macmillan</li> <li>Breast Cancer Now</li> <li>Diabetes UK</li> </p>";
+        }
+      </script>
+
+      <btn class="item3btn">
+        <button onclick="changeText2()" class="show-modal">
+          <div class="text">Education</div>
+        </button>
+      </btn>
+      <script>
+        function changeText2() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Education Charities</h1> <p> <li>The Literacy Pirates Limited</li> <li>Inspire!</li> <li>The Turing Trust</li> <li>Pebbles Project</li> <li>Life Skills Education Charity</li> </p>";
+        }
+      </script>
+
+      <btn class="item4btn">
+        <button onclick="changeText3()" class="show-modal">
+          <div class="text">Environment</div>
+        </button>
+      </btn>
+      <script>
+        function changeText3() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Environment Charities</h1> <p> <li>Trees for Cities</li> <li>The Rivers Trust</li> <li>Blue Marine Foundation</li> <li>National Biodiversity Network Trust</li> <li>Sand Dams Worldwide Limited</li> </p>";
+        }
+      </script>
+
+      <btn class="item5btn">
+        <button onclick="changeText4()" class="show-modal">
+          <div class="text">Animal</div>
+        </button>
+      </btn>
+      <script>
+        function changeText4() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Animal Charities</h1> <p> <li>Freshwater Habitats Trust</li> <li>Mane Chance Sanctuary</li> <li>The British Horse Society</li> <li>The Vincent Wildlife Trust</li> <li>Bumblebea Conservation Trust</li> </p>";
+        }
+      </script>
+
+      <btn class="item6btn">
+        <button onclick="changeText5()" class="show-modal">
+          <div class="text">Human Services</div>
+        </button>
+      </btn>
+      <script>
+        function changeText5() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Human Services</h1> <p> <li>Direct Relief</li> <li>World Vision</li> <li>Lifeline Commnity Projects</li> <li>Brian Mercer Trust</li> <li>National Alliance to End Homelessness</li> </p>";
+        }
+      </script>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <div id="p1">
+          <h1>Hunger Relief</h1>
+          <p>
+            <li>World Food Programme</li>
+            <li>Action Against Hunger</li>
+            <li>The Hunger Project</li>
+            <li>Rise Against Hunger</li>
+            <li>World Central Kitchen</li>
+          </p>
+        </div>
+      </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
