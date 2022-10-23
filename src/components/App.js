@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import SimpleContract from "../abis/SimpleContract.json";
 import Web3 from "web3";
+import  {BrowserRouter, Route, Link} from 'react-router-dom';
+
 import "./App.css";
+import Home from "./Home.js";
+import Donate from "./Donate.js";
+import Donated from "./Donated.js";
+import Vote from "./Vote.js";
+import Voted from "./Voted.js";
 
 class App extends Component {
   async componentWillMount() {
@@ -73,9 +80,22 @@ class App extends Component {
 
   render() {
     return (
+      <>
+      <div class="background">
+
       <div>
-        <h1>Hello</h1>
+        <h1>Header</h1>
       </div>
+
+      <BrowserRouter>
+          <Route exact path="/"  component={Home}/>
+          <Route path="/donate"  component={Donate}/>
+          <Route path="/donated"  component={Donated}/>
+          <Route path="/vote"  component={Vote}/>
+          <Route path="/voted"  component={Voted}/>
+      </BrowserRouter>
+      </div>
+      </>
     );
   }
 }
