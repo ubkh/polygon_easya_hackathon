@@ -5,6 +5,7 @@ import  {BrowserRouter, Route, Link} from 'react-router-dom';
 import "./App.css";
 import Chart from "./Chart.js";
 import Navigator from "./Navbar/navbar.js";
+import Blocks from "./block.js"
 
 class Home extends Component {
     render() {
@@ -20,6 +21,9 @@ class Home extends Component {
                 <Link to="/donate" class="btn btn-primary rounded-pill btn-lg">Donate</Link>
                 </div>
             </div>
+
+            <Blocks/>
+
             <Chart />
             </>
         );

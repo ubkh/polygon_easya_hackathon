@@ -9,18 +9,7 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  color: #333;
-  line-height: 1.5;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: #d790d8;
-  /* background: linear-gradient(to top left, #7b096a, #cb7fd4); */
-}
+
 
 .show-modal .text {
   margin-top: -1rem;

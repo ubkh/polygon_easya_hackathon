@@ -10,12 +10,12 @@ class Chart extends Component {
             <div align="center" style={{padding:"15em 0 15em 0"}}>
                 <DonutChart
                 data={[
-                    {label: '1', value: 25,},
-                    { label: '2', value: 75,},
-                    {label: '3', value: 25,},
-                    { label: '4', value: 75,},
-                    {label: '5', value: 25,},
-                    { label: '6', value: 75,},
+                    {label: 'Hunger', value: 25,},
+                    { label: 'Health', value: 75,},
+                    {label: 'Education', value: 25,},
+                    { label: 'Environment', value: 75,},
+                    {label: 'Animal', value: 25,},
+                    { label: 'Human Services', value: 75,},
                 ]}
                 colors={['#9c27b0', '#673ab7']}
                 strokeColor="#fff"
