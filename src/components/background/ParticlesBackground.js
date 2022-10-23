@@ -1,6 +1,6 @@
 import React from 'react'
 import Particles from 'react-tsparticles'
-import particlesConfig from '../config/particles-config'
+import particlesConfig from './particles-config'
 
 // export const ParticlesBackground = () => {
 //   return (

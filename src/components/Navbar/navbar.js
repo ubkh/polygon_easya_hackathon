@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Button } from 'bootstrap';
 import React, { Component } from 'react';
 import "./navbarStyles.css";
 
@@ -48,12 +49,17 @@ function ColorSchemesExample() {
       <div class="hero-heading">
         <h1>Your home for help</h1>
         <div class="hero-sub-title mt-5">
-          <a href="#" class="text-white"><i class="fa fa-play-circle"></i> Donate to a cause of your choice, your vote will contribtue to the sum of money fundraised by the commmunity and will be allocated to a sector with the highest number of</a>
+          <a href="#" class="text-white"><i class="fa fa-play-circle"></i> Donate to a cause of your choice, where your vote will contribute towards the allocation of a sum of money fundraised by the community, to a sector with highest number of votes</a>
+        </div>
+        <div class= "bigassbutton" >
+        <button type="button" class="btn btn-primary rounded-pill btn-lg">Donate</button>
         </div>
       </div>
 
     </div>
   </div>
+
+
 </header>
 
 

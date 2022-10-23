@@ -42,7 +42,7 @@
 }
 
 .hero {
-  height: 660px;
+  height: 100vh;
   background: linear-gradient(to bottom left, #88d2f0, #8176b5);
   background-size: cover;
   background-position: center;
@@ -74,7 +74,9 @@
 }
 
 
-
+.bigassbutton{
+    margin-top: 5em;
+}
 
 
 
