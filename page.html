@@ -8,23 +8,85 @@
     <title>Modal window</title>
   </head>
   <body>
-    <button class="show-modal">Show modal 1</button>
-    <button class="show-modal">Show modal 2</button>
-    <button class="show-modal">Show modal 3</button>
+    <div class="grid">
+      <btn class="item1btn">
+        <button class="show-modal"><div class="text">Hunger</div></button>
+      </btn>
 
-    <div class="modal hidden">
-      <button class="close-modal">&times;</button>
-      <h1>I'm a modal window 😍</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
+      <btn class="item2btn">
+        <button onclick="changeText1()" class="show-modal">
+          <div class="text">Health</div>
+        </button>
+      </btn>
+      <script>
+        function changeText1() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Health Charities</h1> <p> <li>Mind</li> <li>Age Scotland</li> <li>Macmillan</li> <li>Breast Cancer Now</li> <li>Diabetes UK</li> </p>";
+        }
+      </script>
+
+      <btn class="item3btn">
+        <button onclick="changeText2()" class="show-modal">
+          <div class="text">Education</div>
+        </button>
+      </btn>
+      <script>
+        function changeText2() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Education Charities</h1> <p> <li>Mind</li> <li>Age Scotland</li> <li>Macmillan</li> <li>Breast Cancer Now</li> <li>Diabetes UK</li> </p>";
+        }
+      </script>
+
+      <btn class="item4btn">
+        <button onclick="changeText3()" class="show-modal">
+          <div class="text">Environment</div>
+        </button>
+      </btn>
+      <script>
+        function changeText3() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Environment Charities</h1> <p> <li>Mind</li> <li>Age Scotland</li> <li>Macmillan</li> <li>Breast Cancer Now</li> <li>Diabetes UK</li> </p>";
+        }
+      </script>
+
+      <btn class="item5btn">
+        <button onclick="changeText4()" class="show-modal">
+          <div class="text">Animal</div>
+        </button>
+      </btn>
+      <script>
+        function changeText4() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Animal Charities</h1> <p> <li>Mind</li> <li>Age Scotland</li> <li>Macmillan</li> <li>Breast Cancer Now</li> <li>Diabetes UK</li> </p>";
+        }
+      </script>
+
+      <btn class="item6btn">
+        <button onclick="changeText5()" class="show-modal">
+          <div class="text">Human Services</div>
+        </button>
+      </btn>
+      <script>
+        function changeText5() {
+          document.getElementById("p1").innerHTML =
+            "<h1>Human Services</h1> <p> <li>Mind</li> <li>Age Scotland</li> <li>Macmillan</li> <li>Breast Cancer Now</li> <li>Diabetes UK</li> </p>";
+        }
+      </script>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <div id="p1">
+          <h1>Hunger Relief</h1>
+          <p>
+            <li>World Food Programme</li>
+            <li>Action Against Hunger</li>
+            <li>The Hunger Project</li>
+            <li>Rise Against Hunger</li>
+            <li>World Central Kitchen</li>
+          </p>
+        </div>
+      </div>
+
     <div class="overlay hidden"></div>
 
     <script src="script.js"></script>

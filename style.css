@@ -18,19 +18,33 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #8f0e7b, #cb7fd4);
+  background-color: #d790d8;
+  /* background: linear-gradient(to top left, #7b096a, #cb7fd4); */
+}
+
+.show-modal .text {
+  margin-top: -1rem;
 }
 
 .show-modal {
   font-size: 2rem;
   font-weight: 600;
-  padding: 1.75rem 3.5rem;
-  margin: 5rem 2rem;
+  padding: 8rem 0rem;
+  margin: 2rem 2rem;
   border: none;
-  background-color: #fff;
-  color: #444;
-  border-radius: 10rem;
+  background-color: rgb(198, 103, 192);
+  color: rgb(7, 7, 7);
+  border-radius: 2rem;
   cursor: pointer;
+  width: 30rem;
+  height: 4rem;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.show-modal:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .close-modal {
@@ -42,6 +56,10 @@ body {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+.close-modal:hover {
+  color: red;
 }
 
 h1 {
@@ -65,8 +83,9 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
+  color: rgb(249, 242, 242);
 
-  background-color: white;
+  background-color: rgb(133, 23, 113);
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
@@ -82,4 +101,64 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: space-around;
+}
+
+.item1btn {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item2btn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item3btn {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item4btn {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item5btn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.item6btn {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
