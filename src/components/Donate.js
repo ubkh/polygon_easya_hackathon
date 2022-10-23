@@ -26,11 +26,11 @@ class Donate extends Component {
                
                 <form>
                     <div style={{ transform: "translate3d(0.15em, 0, 0)"}}>
-                    <img src={polygonlogo} alt="Polygon Logo" width="30" height="30" style={{ transform: "translate3d(-0.3em, 0, 0)"}}/>
+                    <img src={polygonlogo} alt="Polygon Logo" width="30" height="30" style={{ transform: "translate3d(-0.3em, -0.4em, 0)"}}/>
                     <input type="number" min="0" class="donationAmount" label="Donation Amount" step="0.1" placeholder="1"/>
                     </div>
                     <br/><br/>
-                    <button onClick={ this.handleClick } type="submit" class="btn btn-sm btn-light btn-outline-primary">Donate</button>
+                    <button onClick={ this.handleClick } type="submit">Donate</button>
                 </form>
                 
             </div>

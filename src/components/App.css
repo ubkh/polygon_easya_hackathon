@@ -2,18 +2,16 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-::-webkit-scrollbar {
-  width: 4px; /* Remove scrollbar space */
-  background: white; /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background: skyblue;
-}
 
-body {
-  background-color: #fff;
+.background {
+  --main: #fff;
+  --secondary: #8247E5;
+
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .main {
@@ -24,31 +22,31 @@ body {
   display: inline-block;
 }
 
-.btn-light {
-  border-color: #fff;
-  color: #8247E5;
-  transition: all 0.75s ease !important;
-  font-size: 16px;
-}
-
-.btn-outline-primary:hover {
-  border-color: #fff;
-  background-color: #8247E5;
-  transition: all 0.75s ease !important;
-  font-size: 18px;
-}
-
 h1, p {
-  color: #8247E5;
+  color: var(--main);
 }
 
 form {
   border-radius: 1em;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  background-color: #8247E5;
+  background-color: var(--secondary);
   width: fit-content;
   padding: 3em 4em;
   margin: 5em 5em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+form button, form button:hover {
+  width: 6em;
+  height: 2em;
+  border-radius: 0.5em;
+  border-color: transparent;
+  color: var(--secondary);
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+form button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-size: 18px;
 }
 
 form .text {
@@ -66,6 +64,29 @@ form .checkLabel {
   transform: translateX(3em);
 }
 
+.link {
+  border-radius: 0.5em;
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: var(--main);
+  font-size: 2.2em;
+  padding: 0.3em 0.7em;
+  transition: all 0.5s ease;
+}
+.link:hover {
+  text-decoration: none;
+  color: var(--main);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-size: 2.5em;
+}
+
+.chart {
+  border-radius: 1em;
+  background-color: var(--main);
+  width: fit-content;
+  padding: 3em;
+}
+
 .donationAmount, .donationAmount:focus {
   border-width: 0 0 2px 0;
   background-color: transparent;
@@ -76,5 +97,5 @@ form .checkLabel {
 }
 
 input[type="radio"]:checked{
-  background-color: #8247E5;
+  background-color: var(--main);
 }

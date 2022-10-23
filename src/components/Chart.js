@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import DonutChart from 'react-donut-chart';
 
-import "./App.css";
-
 class Chart extends Component {
     render() {
         return ( 
             <>
-            <div align="center" style={{padding:"15em 0 15em 0"}}>
+            <div align="center" style={{margin:"10em 0 0 0"}}>
+            <h1>Current Votes</h1>
+
+            <div class="chart">
+                <br/>
                 <DonutChart
                 data={[
                     {label: 'Hunger', value: 25,},
@@ -21,6 +23,9 @@ class Chart extends Component {
                 strokeColor="#fff"
                 />
             </div>
+            </div>
+
+            <br/><br/>
             </>
         );
     }

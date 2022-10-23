@@ -30,7 +30,7 @@ class Vote extends Component {
                     </div>
 
                     <br/>
-                    <button type="submit" class="btn btn-sm btn-light btn-outline-primary">Vote</button>
+                    <button type="submit">Vote</button>
                 </form>
 
                 </div>

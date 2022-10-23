@@ -4,7 +4,7 @@ import  {Link} from 'react-router-dom';
 import "./App.css";
 import Chart from "./Chart.js";
 import Navigator from "./Navbar/navbar.js";
-import Blocks from "./block.js"
+import Category from "./Categories.js"
 
 class Home extends Component {
     render() {
@@ -17,12 +17,11 @@ class Home extends Component {
                 <p>Donate to a cause of your choice, where your vote will contribute towards the allocation of a sum of money fundraised by the community, to a sector with highest number of votes</p>
                 </div>
                 <div class= "bigassbutton" >
-                <Link to="/donate" class="btn btn-primary rounded-pill btn-lg">Donate</Link>
+                <Link to="/donate" class="link">Donate</Link>
                 </div>
             </div>
 
-            <br/><br/><br/><br/><br/>
-            <Blocks/>
+            <Category/>
 
             <Chart />
             </>
