@@ -13,6 +13,7 @@ html {
 
 .show-modal .text {
   margin-top: -1rem;
+  color: #fff;
 }
 
 .show-modal {
@@ -21,7 +22,7 @@ html {
   padding: 8rem 0rem;
   margin: 2rem 2rem;
   border: none;
-  background-color: rgb(198, 103, 192);
+  background-color: #8247E5;
   color: rgb(7, 7, 7);
   border-radius: 2rem;
   cursor: pointer;
