@@ -19,3 +19,28 @@ body {
 .main {
   margin-bottom: -200px;
 }
+.feed-title {
+  font-style: normal;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: -10px;
+}
+.video-title {
+  margin-left: 10px;
+  font-style: normal;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+  cursor: pointer;
+}
+.card:hover {
+  border: 1px solid skyblue;
+}
+.footer {
+  background-color: lightgray;
+  margin-top: 500px;
+}
+.footer-links {
+  padding-top: 1px;
+}
