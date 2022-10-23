@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Web3 from "web3";
 import "./App.css";
@@ -42,7 +43,7 @@ class App extends Component {
     return (
       <>
         <ContainerOutsideExample />
-        <Header/>
+      
       </>
     );
   }
