@@ -13,17 +13,6 @@ function isNumeric(str) {
 }
 
 class Donate extends Component {
-    constructor(){
-        super();
-        this.state = {value: '0.00'};
-        this.onChange = this.onChange.bind(this)
-     }
-     
-     onChange(e){
-        if (isNumeric(e.target.value) || e.target.value == "") {
-           this.setState({value: e.target.value})
-        }
-     }
     render() {
         return ( 
             <>
@@ -33,7 +22,7 @@ class Donate extends Component {
                 <form>
                     <div style={{ transform: "translate3d(0.15em, 0, 0)"}}>
                     <img src={polygonlogo} alt="Polygon Logo" width="30" height="30" style={{ transform: "translate3d(-0.3em, 0, 0)"}}/>
-                    <input class="donationAmount" label="Donation Amount" value={this.state.value} onChange={this.onChange}/>
+                    <input type="number" min="0" class="donationAmount" label="Donation Amount" step="0.1" placeholder="1"/>
                     </div>
                     <br/><br/>
                     <button type="submit" class="btn btn-sm btn-light btn-outline-primary">Donate</button>
