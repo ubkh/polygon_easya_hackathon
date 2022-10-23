@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Web3 from "web3";
-import  {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import "./App.css";
 import NavigatorPages from "./Navbar/navbarPage.js";
