@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import SimpleContract from "../abis/SimpleContract.json";
 import Web3 from "web3";
 
@@ -10,11 +10,10 @@ import Donated from "./Donated.js";
 import Vote from "./Vote.js";
 import Voted from "./Voted.js";
 
-import Navigator from "./Navbar/navbar.js";
-import Layout from "./Layout"
+import Navbar from "./Navbar/Navbar"
 
 class App extends Component {
-  async componentWillMount() {
+  async componentDidMount() {
     await this.loadWeb3();
     await this.loadBlockchainData();
   }
@@ -87,11 +86,15 @@ class App extends Component {
       <div className="background">
 
       <BrowserRouter>
-          <Route exact path="/"  element={<Layout />}/>
-          <Route path="/donate"  component={Donate}/>
-          <Route path="/donated"  component={Donated}/>
-          <Route path="/vote"  component={Vote}/>
-          <Route path="/voted"  component={Voted}/>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home"/>}/>
+          <Route path="/home" element={<Home />}/>
+          <Route path="/donate" element={<Donate />}/>
+          <Route path="/donated" element={<Donated />}/>
+          <Route path="/vote" element={<Vote />}/>
+          <Route path="/voted" element={<Voted />}/>
+        </Routes>
       </BrowserRouter>
       </div>
       </>

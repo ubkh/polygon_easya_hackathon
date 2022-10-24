@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -6,8 +8,7 @@ html {
 .background {
   --main: #fff;
   --secondary: #8247E5;
-
-  background-image: url(images/background.png);
+  --tertiary: #000;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -23,7 +24,7 @@ html {
 }
 
 h1, p {
-  color: var(--main);
+  color: var(--tertiary);
 }
 
 form {
@@ -64,6 +65,12 @@ form .checkLabel {
   transform: translateX(3em);
 }
 
+.square {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
 .link {
   border-radius: 0.5em;
   text-decoration: none;
@@ -71,6 +78,7 @@ form .checkLabel {
   color: var(--main);
   font-size: 2.2em;
   padding: 0.3em 0.7em;
+  margin-left: 20px;
   transition: all 0.5s ease;
 }
 .link:hover {
@@ -80,9 +88,17 @@ form .checkLabel {
   font-size: 2.5em;
 }
 
+.small-font {
+  font-size: 1.5em;
+}
+
+.small-font:hover {
+  font-size: 1.8em;
+}
+
 .chart {
-  border-radius: 1em;
-  background-color: var(--main);
+  border-radius: 1.9em;
+  background-color: ##ecf0f1;
   width: fit-content;
   padding: 3em;
 }
@@ -99,3 +115,13 @@ form .checkLabel {
 input[type="radio"]:checked{
   background-color: var(--main);
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.brand {
+  display: flex;
+}
+

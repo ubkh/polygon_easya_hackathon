@@ -1,15 +1,11 @@
 import React from "react";
 import  {Link} from 'react-router-dom';
 
-import NavigatorPages from "./Navbar/navbarPage.js";
-
-
-function Donated() {
+const Donated = () => {
     return (
         <>
-        <div align="center">
-        <NavigatorPages/>
-            <h1>Your donation has been sent successfully</h1>
+        <div align="center" style={{margin:"15em 0 0 0"}}>
+            <h1><b>Your donation has been sent successfully</b></h1>
             <p>Thank you for donating, if this is your first donation, please take a chance to vote on where we should allocate these funds</p> 
 
             <br/>

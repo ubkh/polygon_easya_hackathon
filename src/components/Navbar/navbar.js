@@ -1,53 +1,39 @@
-import React from 'react';
-import  {Link} from 'react-router-dom';
-import "./navbarStyles.css";
+import React from "react";
+import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavStyling';
 
-function Navigator() {
-  return (
-    <>
+import { Link } from 'react-router-dom';
+import classNames from 'classnames';
+import useSticky from './useSticky';
 
-<header>
-  <div className="hero">
-    <div className="container">
-      <nav className="navbar navbar-expand-lg navbar-dark">
+import metamask from '../images/metamask.svg';
 
-        <a className="navbar-brand" href="#"><img src="https://www.dropbox.com/s/wwe8870bgswddz1/200x100logo_White_Transparent.png?raw=1" target="blank" alt="logo" height="100"></img></a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-       
+import "../App.css";
+import Donate from "../Donate.js";
 
-        <div className="collapse navbar-collapse" id="navbarCollapse">
-          <ul className="navbar-nav mr-auto">
+function Navbar() {
+    const { sticky, stickyRef } = useSticky();
 
-            <li className="nav-item active">
-            <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/donate">Donate</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/vote">Vote</Link>
-            </li>
-            <div className="social soci-mobile">
-              <a href="https://www.facebook.com/ewebdesigns/" target="blank" className="fa fa-facebook-square"></a>
-              <i className="fa fa-twitter-square" aria-hidden="true"></i>
-              <i className="fa fa-github" aria-hidden="true"></i>
-            </div>
-          </ul>
-
-        </div>
-      </nav>
-    </div>
-  </div>
-
-
-</header>
-
-
-
-    </>
-  );
+    return ( 
+        <>
+            <PrimaryNav ref={stickyRef} className={classNames({sticky})}>
+                <a className="brand" href="#"><img src="https://i.postimg.cc/7PFYPY9V/output-onlinepngtools.png" target="blank" alt="logo" height="70"></img></a>
+                <Hamburger />
+                <Menu>
+                <MenuLink to="/home" activeStyle>
+                    <b>Home</b>
+                </MenuLink>
+                <MenuLink to="/donate" activeStyle>
+                    <b>Donate</b>
+                </MenuLink>
+                <MenuLink to="/vote" activeStyle>
+                    <b>Vote</b>
+                </MenuLink>
+                <Link to="/" className={classNames("link", "small-font")} ><img class="square" src={metamask } width="30" height="30"/> Connect Wallet</Link>
+                </Menu>
+            </PrimaryNav>
+      </>
+    );
 }
 
-export default Navigator;
+export default Navbar;
+

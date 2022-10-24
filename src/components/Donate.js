@@ -1,12 +1,7 @@
 import React, { Component } from "react";
-import SimpleContract from "../abis/SimpleContract.json";
-import Web3 from "web3";
-import  {BrowserRouter, Route, Link} from 'react-router-dom';
-import TextField from '@material-ui/core/TextField';
 
 import polygonlogo from './images/polygonlogo.png';
 import "./App.css";
-import NavigatorPages from "./Navbar/navbarPage.js";
 
 function isNumeric(str) {
     if (typeof str != "string") return false // we only process strings!  
@@ -46,9 +41,8 @@ class Donate extends Component {
     render() {
         return ( 
             <>
-            <div align="center">
-            <NavigatorPages/>
-                <h1>Donate</h1>
+            <div align="center" style={{margin:"15em 0 0 0"}}>
+                <h1><b>Donate</b></h1>
                
                 <form>
                     <div style={{ transform: "translate3d(0.15em, 0, 0)"}}>

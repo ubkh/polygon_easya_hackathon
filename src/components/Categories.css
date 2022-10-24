@@ -4,8 +4,8 @@ html {
 }
 
 .categoryBox {
-  color: var(--secondary);
-  background-color: var(--main);
+  color: var(--main);
+  background-color: var(--secondary);
   padding: 2.5em 0;
   text-align: center;
   font-size: 2.5em;
@@ -18,8 +18,8 @@ html {
   margin: 5vh 8vw;
 }
 .categoryBox:hover {
-  color: var(--main);
-  background-color: var(--secondary);
+  color: var(--secondary);
+  background-color: var(--main);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

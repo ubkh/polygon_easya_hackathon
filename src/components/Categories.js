@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./style.css";
+import "./Categories.css";
 
 function toggleInfo(num) {
     const catInfo = document.getElementById('catInfo' + num);
@@ -30,7 +30,7 @@ function Categories() {
         <>
         <div align="center" style={{margin:"15em 0 0 0"}}>
         
-        <h1>Categories</h1>
+        <h1><b>Categories</b></h1>
             <div class="categoryBox" onClick={() => toggleInfo(1)}>Hunger</div>
             <div class="categoryBox" onClick={() => toggleInfo(2)}>Health</div>
             <div class="categoryBox" onClick={() => toggleInfo(3)}>Education</div>

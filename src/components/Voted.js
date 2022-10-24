@@ -1,13 +1,10 @@
 import React from "react";
 
-import NavigatorPages from "./Navbar/navbarPage.js";
-
-function Voted() {
+const Voted = () => {
     return (
         <>
-        <div align="center">
-            <NavigatorPages/>
-            <h1>You have voted</h1>
+        <div align="center" style={{margin:"15em 0 0 0"}}>
+            <h1><b>You have voted</b></h1>
             <p>Thank you for voting, your vote has been recorded</p>
         </div>
         </>
