@@ -12,7 +12,7 @@
 ## Installation
 1. Clone this repository using `git clone <repository>`
 2. `cd polygon_easya_hackathon`
-3. Install dependancies: `npm install`. May need to follow up with `npm audit fix`.
+3. Install dependancies: `npm install --legacy-peer-deps`. You may need to follow up with `npm audit fix`.
 4. Install ganache: `npm install ganache --global`
 5. Install truffle: `npm install -g truffle`
 6. Create a `.env` file in the root directory and insert `MNEMONIC = <YOUR-METAMASK-SECRET-PHRASE>`.

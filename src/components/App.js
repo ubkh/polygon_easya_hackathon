@@ -88,7 +88,7 @@ class App extends Component {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path="/" element={<Navigate to="/home"/>}/>
+          <Route index element={<Navigate to="/home"/>}/>
           <Route path="/home" element={<Home />}/>
           <Route path="/donate" element={<Donate />}/>
           <Route path="/donated" element={<Donated />}/>
