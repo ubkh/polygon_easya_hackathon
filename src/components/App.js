@@ -90,7 +90,7 @@ class App extends Component {
         <Routes>
           <Route index element={<Navigate to="/home"/>}/>
           <Route path="/home" element={<Home />}/>
-          <Route path="/donate" element={<Donate />}/>
+          <Route path="/donate" element={<Donate appState = {this.state}/>}/>
           <Route path="/donated" element={<Donated />}/>
           <Route path="/vote" element={<Vote />}/>
           <Route path="/voted" element={<Voted />}/>

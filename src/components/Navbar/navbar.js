@@ -8,7 +8,6 @@ import useSticky from './useSticky';
 import metamask from '../images/metamask.svg';
 
 import "../App.css";
-import Donate from "../Donate.js";
 
 function Navbar() {
     const { sticky, stickyRef } = useSticky();
@@ -16,19 +15,19 @@ function Navbar() {
     return ( 
         <>
             <PrimaryNav ref={stickyRef} className={classNames({sticky})}>
-                <a className="brand" href="#"><img src="https://i.postimg.cc/7PFYPY9V/output-onlinepngtools.png" target="blank" alt="logo" height="70"></img></a>
+                <a className="brand" href="home"><img src="https://i.postimg.cc/7PFYPY9V/output-onlinepngtools.png" alt="Logo" target="blank" height="70"></img></a>
                 <Hamburger />
                 <Menu>
-                <MenuLink to="/home" activeStyle>
+                <MenuLink to="/home">
                     <b>Home</b>
                 </MenuLink>
-                <MenuLink to="/donate" activeStyle>
+                <MenuLink to="/donate">
                     <b>Donate</b>
                 </MenuLink>
-                <MenuLink to="/vote" activeStyle>
+                <MenuLink to="/vote">
                     <b>Vote</b>
                 </MenuLink>
-                <Link to="/" className={classNames("link", "small-font")} ><img class="square" src={metamask } width="30" height="30"/> Connect Wallet</Link>
+                <Link to="/" className={classNames("link", "small-font")} ><img className="square" src={metamask } alt="Metamask" width="30" height="30"/> Connect Wallet</Link>
                 </Menu>
             </PrimaryNav>
       </>

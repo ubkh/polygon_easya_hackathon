@@ -29,12 +29,10 @@ class Donate extends Component {
         event.preventDefault();
         console.log(this.state.amount);
         const web3 = window.web3;
-        const sc = this.props.sc;
-        const account = this.props.account;
-        console.log(account);
-        sc.methods.donate().send({
-            from: account,
-            value: web3.utils.toWei(this.state.amount, 'ether') 
+        const app = this.props.appState;
+        app.sc.methods.donate().send({
+            from: app.account,
+            value: web3.utils.toWei(String(this.state.amount), 'ether') 
         });
     }
 
