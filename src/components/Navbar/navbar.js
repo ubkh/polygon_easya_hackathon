@@ -7,32 +7,32 @@ function Navigator() {
     <>
 
 <header>
-  <div class="hero">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+  <div className="hero">
+    <div className="container">
+      <nav className="navbar navbar-expand-lg navbar-dark">
 
-        <a class="navbar-brand" href="#"><img src="https://www.dropbox.com/s/wwe8870bgswddz1/200x100logo_White_Transparent.png?raw=1" target="blank" alt="logo" height="100"></img></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a className="navbar-brand" href="#"><img src="https://www.dropbox.com/s/wwe8870bgswddz1/200x100logo_White_Transparent.png?raw=1" target="blank" alt="logo" height="100"></img></a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
        
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <ul className="navbar-nav mr-auto">
 
-            <li class="nav-item active">
-            <Link class="nav-link" to="/">Home</Link>
+            <li className="nav-item active">
+            <Link className="nav-link" to="/">Home</Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/donate">Donate</Link>
+            <li className="nav-item">
+              <Link className="nav-link" to="/donate">Donate</Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/vote">Vote</Link>
+            <li className="nav-item">
+              <Link className="nav-link" to="/vote">Vote</Link>
             </li>
-            <div class="social soci-mobile">
-              <a href="https://www.facebook.com/ewebdesigns/" target="blank" class="fa fa-facebook-square"></a>
-              <i class="fa fa-twitter-square" aria-hidden="true"></i>
-              <i class="fa fa-github" aria-hidden="true"></i>
+            <div className="social soci-mobile">
+              <a href="https://www.facebook.com/ewebdesigns/" target="blank" className="fa fa-facebook-square"></a>
+              <i className="fa fa-twitter-square" aria-hidden="true"></i>
+              <i className="fa fa-github" aria-hidden="true"></i>
             </div>
           </ul>
 

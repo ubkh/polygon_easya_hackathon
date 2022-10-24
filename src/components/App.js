@@ -10,6 +10,8 @@ import Donated from "./Donated.js";
 import Vote from "./Vote.js";
 import Voted from "./Voted.js";
 
+import Navigator from "./Navbar/navbar.js";
+import Layout from "./Layout"
 
 class App extends Component {
   async componentWillMount() {
@@ -54,16 +56,16 @@ class App extends Component {
       console.log(vote);
       console.log(voteCount);
 
-      console.log(await sc.methods.getVoteCountByCat("health").call());
+      //console.log(await sc.methods.getVoteCountByCat("health").call());
 
       await sc.methods.createCharity("0xb975468E6f03C870A5d5ef4c749bC29e943232F5", "1", "health", "").send({
         from: accounts[0]
       });
-      await sc.methods.donate().send({
-        from: accounts[0],
-        value: web3.utils.toWei("0.0001", 'ether') 
-      });
-      await sc.methods.allocateFunds().call();
+      //await sc.methods.donate().send({
+      //  from: accounts[0],
+      //  value: web3.utils.toWei("0.0001", 'ether') 
+      //});
+      //await sc.methods.allocateFunds().call();
 
     } else {
       window.alert("SimpleContract contract not deployed to detected network.");
@@ -82,10 +84,10 @@ class App extends Component {
   render() {
     return (
       <>
-      <div class="background">
+      <div className="background">
 
       <BrowserRouter>
-          <Route exact path="/"  component={Home}/>
+          <Route exact path="/"  element={<Layout />}/>
           <Route path="/donate"  component={Donate}/>
           <Route path="/donated"  component={Donated}/>
           <Route path="/vote"  component={Vote}/>
