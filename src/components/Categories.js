@@ -5,19 +5,24 @@ function toggleInfo(num) {
     const catInfo = document.getElementById('catInfo' + num);
     const overlay = document.getElementById('overlay');
 
-    if (catInfo.style.display === "block") {
-        catInfo.style.display = "none";
-        overlay.style.display = "none";
+    if (catInfo.style.opacity === "1") {
+        catInfo.style.opacity = "0";
+        catInfo.style.zIndex = "-10";
+        overlay.style.opacity = "0";
+        overlay.style.zIndex = "-5";
         document.body.style.position = '';
         document.body.style.overflowY = '';
     }
     else {
-        catInfo.style.display = "block";
-        overlay.style.display = "block";
+        catInfo.style.opacity = "1";
+        catInfo.style.zIndex = "10";
+        overlay.style.opacity = "1";
+        overlay.style.zIndex = "5";
         document.body.style.overflowY = 'hidden';
         document.body.style.position = 'fixed';
         window.scrollTo(0, 0);
     }
+    console.log(num);
 }
 
 function Categories() {
